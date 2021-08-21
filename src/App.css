@@ -1,39 +1,49 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+html{
+    text-rendering: optimizeLegibility;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.icon{
+    padding: 7px 5px 0px 5px;
+    margin-right: 46px;
+    height: 36px;
+    width: auto;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+div{
+    box-sizing: border-box;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+
+
+p{
+    margin: 0px;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+a{
+    text-decoration: none;
 }
+
+a:visited{
+    text-decoration: none;
+}
+
+.content{
+    margin-left: 220px;
+    padding: 100px 6vw 90px 6vw;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
