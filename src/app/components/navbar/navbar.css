@@ -63,10 +63,16 @@
 }
 
 .active{
-    border-left-width: 4px;
     padding-left: 0px;
-    color: #EF5466;
     fill: #EF5466;
+}
+
+.active span{
+    color: #EF5466;
+}
+
+.active div{
+    border-left-width: 4px;
 }
 
 
