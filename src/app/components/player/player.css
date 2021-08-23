@@ -1,0 +1,36 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: solid 0px #EEE;
+    border-top-width: 1px;
+    background-color: white;
+    z-index: 2;
+    height: 80px;
+}
+
+.play-button{
+    margin-left: 63px;
+    height: 100%;
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    padding: 14px 0px 14px 14px;
+    border-radius: 50%;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.play-button:hover{
+    background-color: #EEE;
+}
+
+.song-title{
+    margin-right: 15px;
+}
+
+.song-info-box{
+    margin-left: 50px;
+    margin-top: 15px;
+    height: 50px;
+}

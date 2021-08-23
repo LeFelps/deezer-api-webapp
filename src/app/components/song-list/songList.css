@@ -14,9 +14,7 @@
     opacity: 0.8;
 }
 
-.album-cover:hover .icon-hidden{
-    visibility: visible;
-}
+
 
 .song{
     padding-right: 15px;
@@ -82,3 +80,4 @@
     margin-right: 2px;
     margin-left: 1px;
 }
+
