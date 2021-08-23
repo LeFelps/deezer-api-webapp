@@ -5,11 +5,7 @@ import * as songActions from '../../actions/SongActions'
 import { secondsToMinutes, filteredSongs } from '../../methods/songMethods';
 
 
-
-
-
 const SongList = ({songs, filter, dispatch}) => (
-
     <div>
         <p className="section-name">Principais músicas do momento</p>
         <div className="flex">    
