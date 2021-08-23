@@ -63,7 +63,6 @@
 }
 
 .active{
-    padding-left: 0px;
     fill: #EF5466;
 }
 
@@ -72,6 +71,7 @@
 }
 
 .active div{
+    padding-left: 0px;
     border-left-width: 4px;
 }
 
