@@ -2,9 +2,14 @@ import React from 'react';
 import { connect } from 'react-redux';
 import './navbar.css'
 import {NavLink} from 'react-router-dom'
-// import * as navActions from '../../actions/NavbarActions'
+import * as navActions from '../../actions/NavbarActions'
 
-const Navbar = ({}) => (
+var inputValue = ''
+
+// onKeyPress={event => { if (event.key === 'Enter') {dispatch(navActions.filterSearch(filter))}}}
+
+
+const Navbar = ({filter, dispatch}) => (
 
     <div>
                 <div className="navbar">
@@ -13,7 +18,8 @@ const Navbar = ({}) => (
                     </div>
                     <div className="searchbar">
                         <svg className="search-icon" viewBox="0 0 16 16" width="16" height="16" focusable="false" role="img" aria-hidden="true" className="sk__sc-1vdzswr-0 gHFJOr topbar-search-icon"><g><path d="M13 7.5a5.5 5.5 0 1 0-11 0 5.5 5.5 0 0 0 11 0zm-1.43 5.07a6.5 6.5 0 1 1 .73-.685l2.054 2.054a.5.5 0 0 1-.708.707L11.57 12.57z"></path></g></svg>
-                        <input type="text" id="searchInput" placeholder="Buscar" onKeyPress={event => {if (event.key === 'Enter') {this.search()}}}></input>
+                        <input type="text" id="searchInput" placeholder="Buscar" value={filter} onChange={(event) => dispatch(navActions.filterSearch(event.target.value))} ></input>
+                        
                     </div>
                 </div>
                 <div>
@@ -49,9 +55,8 @@ const Navbar = ({}) => (
 )
 
 const mapStateToProps = (state) => {
-    console.log(state);
     return {
-        
+        filter: state.rootReducer.nav.filter
     }
 }
 

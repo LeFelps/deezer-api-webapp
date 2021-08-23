@@ -2,13 +2,18 @@ import React from 'react';
 import './songList.css'
 import { connect } from 'react-redux';
 import * as songActions from '../../actions/SongActions'
-import { secondsToMinutes } from '../../methods/songMethods';
+import { secondsToMinutes, filteredSongs } from '../../methods/songMethods';
 
-const SongList = ({songs, dispatch}) => (
+
+
+
+
+const SongList = ({songs, filter, dispatch}) => (
+
     <div>
         <p className="section-name">Principais músicas do momento</p>
         <div className="flex">    
-            {songs.map(song =>{
+            {filteredSongs(songs, filter).map(song =>{
                 return <div className="song" key={song.id}>
                         <a href={song.link}>
                             <img className="album-cover" src={song.album.cover_big} alt=""></img>
@@ -39,6 +44,7 @@ const SongList = ({songs, dispatch}) => (
 
 const mapStateToProps = (state) => {
     return {
+        filter: state.rootReducer.nav.filter,
         songs: state.rootReducer.songList.songs
     }
 }

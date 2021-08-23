@@ -16,3 +16,22 @@ export function secondsToMinutes(time) {
 
     return minutes + ":" + seconds
 }
+
+
+
+export function filteredSongs(songs, filter) {
+    
+    var filteredList = []
+
+    filter = filter.toLowerCase()
+
+    for (let i = 0; i < songs.length; i++) {
+        console.log(songs[i]);
+        if((songs[i].title).toLowerCase().includes(filter) || (songs[i].album.title).toLowerCase().includes(filter) || (songs[i].artist.name).toLowerCase().includes(filter))
+        filteredList.push(songs[i])
+        
+    }
+
+    return  filteredList
+
+}
