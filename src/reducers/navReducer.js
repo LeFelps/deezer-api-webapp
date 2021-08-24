@@ -3,7 +3,7 @@ const initState = {
 }
 
 const navReducer = (state = initState, action) => {
-    if (action.type == 'FILTER_SEARCH') {
+    if (action.type === 'FILTER_SEARCH') {
         return {...state, filter:action.filter}
     }
     return state

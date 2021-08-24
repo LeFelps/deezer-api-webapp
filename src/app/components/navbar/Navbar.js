@@ -4,7 +4,6 @@ import './navbar.css'
 import {NavLink} from 'react-router-dom'
 import * as navActions from '../../actions/NavbarActions'
 
-var inputValue = ''
 
 // onKeyPress={event => { if (event.key === 'Enter') {dispatch(navActions.filterSearch(filter))}}}
 
