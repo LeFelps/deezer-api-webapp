@@ -7,7 +7,7 @@ var audio = new Audio();
 var playing = false
 
 const playPause = (track) =>{
-        console.log(window.location.pathname);
+
         if (playing === true){
             audio.pause()
             playing = false

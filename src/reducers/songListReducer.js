@@ -116,7 +116,6 @@ const songListReducer = (state = initState, action) => {
             favoriteSongs: state.favoriteSongs.filter((favoriteSong) => favoriteSong.id !== action.favoriteSongs.id)
         }
 
-
     }
 
     return state
