@@ -4,10 +4,9 @@ import { connect } from 'react-redux';
 import * as songActions from '../../actions/SongActions'
 import { secondsToMinutes, filteredSongs } from '../../methods/songMethods';
 
-
 const SongList = ({songs, filter, dispatch}) => (
     <div>
-        <p className="section-name">Principais músicas do momento</p>
+        <p className="section-name" >Principais músicas do momento</p>
         <div className="flex">    
             {filteredSongs(songs, filter).map(song =>{
                 return <div className="song" key={song.id}>
@@ -40,8 +39,8 @@ const SongList = ({songs, filter, dispatch}) => (
 
 const mapStateToProps = (state) => {
     return {
-        filter: state.rootReducer.nav.filter,
-        songs: state.rootReducer.songList.songs
+        filter: state.nav.filter,
+        songs: state.songList.songs
     }
 }
 

@@ -5,7 +5,6 @@ export function setActiveSong(activeSong) {
     };
 }
 
-
 export function addFavoriteSong(favoriteSongs) {
     return   {
         type: 'ADD_FAVORITE_SONG',

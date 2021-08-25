@@ -39,8 +39,8 @@ const Favorites = ({favoriteSongs, filter, dispatch}) => (
 
 const mapStateToProps = (state) => {
     return {
-        filter: state.rootReducer.nav.filter,
-        favoriteSongs: state.rootReducer.songList.favoriteSongs
+        filter: state.nav.filter,
+        favoriteSongs: state.songList.favoriteSongs
     }
 }
 

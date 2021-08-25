@@ -38,7 +38,7 @@ const Player = ({ activeSong, dispatch }) => (
 
 const mapStateToProps = (state) => {
     return {
-        activeSong: state.rootReducer.songList.activeSong
+        activeSong: state.songList.activeSong
     }
 }
 
