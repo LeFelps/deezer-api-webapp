@@ -35,5 +35,21 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Examples
+
+Main page
+![image](https://user-images.githubusercontent.com/34667580/130726515-be893cb3-5393-472d-aa73-a8a7a3b33c38.png)
+
+
+Search on the top songs by artist name, album name or song name
+![image](https://user-images.githubusercontent.com/34667580/130726645-f776787b-8af1-4ac7-8c83-dd89183a68e6.png)
+
+
+Add and remove songs on your "favorites" page
+![image](https://user-images.githubusercontent.com/34667580/130726772-e5a1070d-a2db-4ef9-b718-1194e1628e3b.png)
+
+
+Use the buttons to play a preview, favorite, or go to the song page on deezer
+![image](https://user-images.githubusercontent.com/34667580/130726933-1dfd3686-45ca-41fb-83c6-76c05b42dcaa.png)
+
 
