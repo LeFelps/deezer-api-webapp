@@ -50,6 +50,7 @@ Add and remove songs on your "favorites" page
 
 
 Use the buttons to play a preview, favorite, or go to the song page on deezer
+
 ![image](https://user-images.githubusercontent.com/34667580/130726933-1dfd3686-45ca-41fb-83c6-76c05b42dcaa.png)
 
 
