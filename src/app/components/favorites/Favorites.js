@@ -1,9 +1,18 @@
 import React from 'react';
-import '../song-list/songList.css'
 import { connect } from 'react-redux';
+
+//importing css style for component
+import '../song-list/songList.css'
+
+//importing actions to be dispatched
 import * as songActions from '../../actions/SongActions'
+
+//importing songMethods 
+//function 'secondsToMinutes' recieves a integer value (in seconds) and changes it to minutes:seconds (00:00)
+//function 'filteredSongs' recieves 'songs' and 'filter', creating a new array of filtered songs ('songs' filtered by 'filter' containing filter in either artist name, album title or song title)
 import { secondsToMinutes, filteredSongs } from '../../methods/songMethods';
 
+// Favorites component exported by default
 const Favorites = ({favoriteSongs, filter, dispatch}) => (
     <div>
         <p className="section-name">Suas músicas favoritas</p>
@@ -37,6 +46,7 @@ const Favorites = ({favoriteSongs, filter, dispatch}) => (
     </div>
 );
 
+// function to map the store state to the component props
 const mapStateToProps = (state) => {
     return {
         filter: state.nav.filter,

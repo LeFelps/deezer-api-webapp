@@ -1,11 +1,21 @@
 import React from 'react';
 import { connect } from 'react-redux';
+
+//importing css style for component
 import './player.css'
+
+//importing songMethods (secondsToMinutes: recieves a integer value (in seconds) and changes it to minutes:seconds (00:00))
 import { secondsToMinutes } from '../../methods/songMethods';
 
+
+// audio variable that will revieve the "currentSong" preview property for playing (link to mp3 file)
 var audio = new Audio();
+
+// boolean variable that defines if the song is playing
 var playing = false
 
+
+// arrow function for pausing audio and changing "playing" value to false (called at component mounting) 
 const autoPause = (track) =>{
     if (playing === true){
         audio.pause()
@@ -13,6 +23,7 @@ const autoPause = (track) =>{
     } 
 }
 
+// arrow function for pausing and playing audio of current track depending os "playing" value and changing it (called at button press)
 const playPause = (track) =>{
 
         if (playing === true){
@@ -27,6 +38,7 @@ const playPause = (track) =>{
 
 }
 
+// player component exported by default
 const Player = ({ activeSong, dispatch }) => (
     <div className="footer flex">
         {autoPause(activeSong)}
@@ -43,11 +55,11 @@ const Player = ({ activeSong, dispatch }) => (
     </div>
 ) 
 
+// function to map the store state to the component props
 const mapStateToProps = (state) => {
     return {
         activeSong: state.songList.activeSong
     }
 }
-
 
 export default connect(mapStateToProps)(Player)

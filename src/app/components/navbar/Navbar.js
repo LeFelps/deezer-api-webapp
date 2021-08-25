@@ -1,9 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom'
+
+//importing css style for component
 import './navbar.css'
-import {NavLink} from 'react-router-dom'
+
+//importing actions to be dispatched
 import * as navActions from '../../actions/NavbarActions'
 
+// Navbar component exported by default
 const Navbar = ({filter, dispatch}) => (
     <div>
         <div className="navbar">
@@ -44,6 +49,7 @@ const Navbar = ({filter, dispatch}) => (
     </div> 
 )
 
+// function to map the store state to the component props
 const mapStateToProps = (state) => {
     return {
         filter: state.nav.filter

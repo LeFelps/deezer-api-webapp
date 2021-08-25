@@ -1,3 +1,4 @@
+//function 'secondsToMinutes' recieves a integer value (in seconds) and changes it to minutes:seconds (00:00)
 export function secondsToMinutes(time) {
 
     var mind = time % (60 * 60);
@@ -18,7 +19,7 @@ export function secondsToMinutes(time) {
 }
 
 
-
+//function 'filteredSongs' recieves 'songs' and 'filter', creating a new array of filtered songs ('songs' filtered by 'filter' containing filter in either artist name, album title or song title)
 export function filteredSongs(songs, filter) {
     
     var filteredList = []
