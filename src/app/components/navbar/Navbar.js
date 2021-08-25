@@ -13,7 +13,6 @@ const Navbar = ({filter, dispatch}) => (
             <div className="searchbar">
                 <svg className="search-icon" viewBox="0 0 16 16" width="16" height="16" focusable="false" role="img" aria-hidden="true" className="sk__sc-1vdzswr-0 gHFJOr topbar-search-icon"><g><path d="M13 7.5a5.5 5.5 0 1 0-11 0 5.5 5.5 0 0 0 11 0zm-1.43 5.07a6.5 6.5 0 1 1 .73-.685l2.054 2.054a.5.5 0 0 1-.708.707L11.57 12.57z"></path></g></svg>
                 <input type="text" id="searchInput" placeholder="Buscar" value={filter} onChange={(event) => dispatch(navActions.filterSearch(event.target.value))}></input>
-                
             </div>
         </div>
         <div>
@@ -40,12 +39,9 @@ const Navbar = ({filter, dispatch}) => (
                         </div>
                     </NavLink>
                 </div>
-
             </div>
-            
         </div>                
     </div> 
-
 )
 
 const mapStateToProps = (state) => {
