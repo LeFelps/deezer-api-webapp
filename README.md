@@ -41,7 +41,7 @@ Main page
 ![image](https://user-images.githubusercontent.com/34667580/130726515-be893cb3-5393-472d-aa73-a8a7a3b33c38.png)
 
 
-Search on the top songs by artist name, album name or song name
+Search on the top songs by artist name, album title or song title
 ![image](https://user-images.githubusercontent.com/34667580/130726645-f776787b-8af1-4ac7-8c83-dd89183a68e6.png)
 
 
